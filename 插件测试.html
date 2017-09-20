@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="xuehua/js/jquery.min.js"></script>
+		<script src="lunbochajian/scripts/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lunbochajian/scripts/camera.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="lunbochajian/css/camera.css"/>
+		
+		<script src="xuehua/js/snow.js"></script>
+		<link href="xuehua/css/jq22.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript">
+			jQuery(function(){
+				jQuery('#camera_demo').camera({
+					time:'2000',
+					height:'360',
+					playPause:'false'
+				});
+				createSnow('xuehua/', 60);
+			})
+			
+		</script>
+	</head>
+	<body id="introduction">
+		<div class="camera_wrap" id="camera_demo">
+			<div data-src="img/banner/b1.jpg"></div>
+			<div data-src="img/banner/b2.jpg"></div>
+			<div data-src="img/banner/b3.jpg"></div>
+			<div data-src="img/banner/b4.jpg"></div>
+			<div data-src="img/banner/b5.jpg"></div>
+		</div>
+	</body>
+</html>

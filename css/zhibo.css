@@ -1,0 +1,595 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	/*border: 0;*/
+	/*font-size: 14px;*/
+}
+input{
+	outline:none;
+	border: none;
+}
+.wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+i,b,s,u{
+	font-style: normal;
+}
+body,a{
+	color: #333;
+	font-size: 14px;
+}
+a:hover{
+	color: #267FD4;
+}
+img{
+	display: block;
+	border:0;
+}
+br{
+	clear: both;
+	height:0;
+	font-size:0px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.mr{
+	margin-right: 0;
+}
+.ml{
+	margin-left: 0;
+}
+.col-blue{
+	color: #267fd4;	
+}
+.dp-n{
+	display: none;
+}	
+.h4comon{
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 28px;
+	text-align: center;
+}
+/********************************************/
+.header{
+	background: #1d2736;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+}
+.nav{
+	margin-left: 15px;
+}
+.nav li{
+	float: left;
+}
+.nav li a{
+	display: block;
+	padding: 0 15px;
+	line-height: 60px;
+	font-size: 14px;
+	color: #c8c8c8;
+	position: relative;
+}
+#zhibo{
+	color: white;
+}
+.nav li a i,.appdw a>span{
+	width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 5px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -7px;
+}
+.nav li a span{
+	display: block;
+	width: 28px;
+	height: 14px;
+	position: absolute;
+	top: 15px;
+	right: -5px;
+	background: url("../img/index/head.png") no-repeat;
+	background-position: -165px -28px;
+}
+.nav li a:hover,.login a:hover{
+	color: white;
+}
+
+.logo a{
+	display: block;
+	width: 117px;
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -18px 0 0 -58px;
+	background: url("../img/index/head.png") 0 -315px no-repeat;
+}
+.login{
+	padding: 0 32px;
+	margin-right: 88px;
+}
+.login a{
+	line-height: 60px;
+	color: #c8c8c8;
+	font-size: 14px;
+}
+.login em{
+	width: 0;
+	height: 14px;
+	border-left: 1px solid #303947;
+	margin: 0 23px;
+}
+.nav_login>i,.appdw>span{
+	float: left;
+	width: 0;
+	height: 60px;
+	border-left: 1px solid #141c28;
+	border-right: 1px solid #303947;
+}
+.appdw{
+	position: relative;
+}
+.appdw a{
+	padding:  0 18px;
+	float: right;
+	width: 84px;
+	height: 60px;
+	font-size: 14px;
+	color: white;
+	line-height: 60px;
+	cursor: pointer;
+}
+.appdw i{
+	float: left;
+	width: 13px;
+	height: 20px;
+	background: url("../img/index/head.png") -54px -45px no-repeat;
+	margin-right: 5px;
+	margin-top: 20px;
+}
+.appdw a b{
+	position: absolute;
+	top: 28px;
+	right: 15px;
+	display: block;
+	width: 7px;
+	height: 4px;
+	background: url("../img/index/head.png") -140px 0 no-repeat;
+}
+.appdw>div{
+	position: absolute;
+	top: 60px;
+	left: -30px;
+}
+.shoppingcar{
+	position: absolute;
+	top: 0;
+	right: 20px;
+	width: 62px;
+	height: 62px;
+	background: #e83729;
+	cursor: pointer;
+}
+.shoppingcar a{
+	display: block;
+	width: 26px;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 18px;
+	background: url("../img/index/head.png") 0 -45px no-repeat;
+}
+.sc_con{
+	display: none;
+	width: 350px;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	border-top: 3px solid #e83729;
+	background: #fff;
+	box-shadow: 0 3px 5px rgba(0,0,0,.25);
+}
+.sc_con p{
+	padding: 100px 0;
+	text-align: center;
+}
+
+.content{
+	margin-top: 100px;
+}
+.main_video{
+	margin-bottom: 60px;
+}
+.main_tit{
+	padding-left: 30px;
+	background: url("../img/zhibo/clock.png") no-repeat;
+}
+.main_tit h3:first-child+h3{
+	width: 358px;
+	float: right;
+}
+.main_tit h3{
+	float: left;
+	font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+.video{
+	width: 820px;
+	float: left;
+	position: relative;
+}
+.video img{
+	width: 820px;
+	height: 460px;
+}
+.videotit{
+	height: 45px;
+	line-height: 45px;
+    background: #f2f2f2;
+    padding-left: 15px;
+   
+}
+.videotit a{
+	font-size: 16px;
+}
+.videoinfo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 820px;
+	height: 460px;
+	background: rgba(0,0,0,0.5);
+}
+.videoinfo p{
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.videoinfo p:first-child{
+	margin-top: 178px;
+}
+.videoinfo p:first-child+p+p{
+	margin-top: 20px;
+    font-size: 16px;
+    line-height: normal;
+    color: #ff8601;
+}
+.aboutinfo{
+	float: right;
+	width: 358px;
+	margin-bottom: 12px;
+}
+.aboutinfo img{
+	width: 358px;
+	height: 202px;
+}
+.videologo{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 94px;
+	height: 33px;
+	background: url("../img/zhibo/logo.png");
+}
+
+.startp i{
+	background: url("../img/zhibo/clock1.png") no-repeat;
+	padding-left: 40px;
+}
+.videoinfo .pbtn{
+	margin: 0 auto;
+	width: 140px;
+    height: 37px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 37px;
+    background: #ff8601;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.myreservation{
+	margin-bottom: 40px;
+}
+.myreservation h3{
+	font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    padding-left: 30px;
+    background: url("../img/zhibo/1.png") no-repeat;
+}
+.non_login{
+	height: 130px;
+    line-height: 130px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+}
+.box{
+	display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: normal;
+    padding-left: 82px;
+    background: url("../img/zhibo/3.png") no-repeat;
+}
+.box>a{
+	width: 140px;
+    height: 37px;
+    font-size: 16px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background: #1e7dd7;
+    border-radius: 2em;
+    margin-top: 15px;
+}
+.reviews h3{
+	font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    padding-left: 30px;
+    background: url("../img/zhibo/2.png") no-repeat;
+}
+.reviews img{
+	width: 380px;
+	height: 214px;
+}
+.reviews_list{
+	margin-left: -20px;
+}
+.reviews_list li{
+	margin-bottom: 20px;
+	float: left;
+	margin-left:20px ;
+	background: #F2F2F2;
+	width: 380px;
+	height: 289px;
+}
+.lookpeople{
+	line-height: 15px;
+    font-size: 14px;
+    color: gray;
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+	background-color: #f7f7f7;
+	margin-top: 15px;
+    font-size: 13px;
+}
+.footpng{
+	height: 4px;
+	margin-bottom: 40px;
+	background: url("../img/index/foot.png") no-repeat;
+}
+.fotlogo{
+	float: left;
+	width: 200px;
+	position: relative;
+}
+.fotlogo dt a{
+	display: block;
+	width: 136px;
+	height: 43px;
+	background: url("../img/index/foot.png") 0 -10px no-repeat;
+}
+.fotlogo dd{
+	float: left;
+	margin-top: 10px;
+	margin-right: 24px;
+}
+.fotlogo i,.fotmap i{
+	background: url("../img/index/foot.png") -495px -9px no-repeat;
+    width: 1px;
+    height: 157px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fotmap{
+	width: 501px;
+	float: left;
+	position: relative;
+}
+.fotmap dl{
+	float: left;
+	margin-left: 55px;
+	line-height: 2em;
+}
+.fotmap dd a{
+	font-size: 16px;	
+	line-height: 2em;
+}
+.fm_tuijian{
+	width: 200px;
+}
+.fm_tuijian dd{
+	float: left;
+	margin-right: 28px;
+}
+
+.fm_lanmu{	
+	width: 42px;
+}
+
+.fm_guanzhu dd a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url("../img/index/foot.png") no-repeat;
+	background-position: -140px -9px;
+	margin-top: 8px;
+}
+.fm_guanzhu .fm_weibxin{
+	background-position: -170px -9px;
+}
+.fm_guanzhu .fm_rss{
+	background-position: -200px -9px;
+}
+
+
+.fotweek{
+	float: left;
+	width: 172px;
+	margin-left: 55px;
+}
+.fotweek .indextit i{
+	color: #7d7d7d;
+	font-size: 12px;
+	float: right;
+	margin-top: 10px;
+}
+.fotweek img{
+	width: 170px;
+	height: 80px;
+	
+}
+.fotweek>a{
+	display: block;
+	border: 1px solid #ccc;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.fotinput{
+	position: relative;
+}
+.fotinput input{
+	width: 162px;
+	height: 27px;
+	text-indent: 10px;
+	color: #C8C8C8;
+	background: url("../img/index/foot.png") -330px -34px no-repeat;
+}
+.fotinput span{
+	position: absolute;
+	top: 1px;
+	right: 0;
+	display: block;
+	width: 54px;
+	height: 25px;
+	text-align: center;
+	color: white;
+	line-height: 25px;
+	cursor: pointer;
+	background: url("../img/index/foot.png") -330px -9px no-repeat;
+}
+.fotinput span:hover{
+	background-position: -384px -9px;
+}
+
+.fotdownload{
+	width: 205px;
+    float: left;
+    text-align: center;
+    margin-left: 55px;
+}
+ 
+.fotdownload .indextit i{
+	color: #7d7d7d;
+	font-size: 12px;
+}
+.fotdownload>div{
+	width: 100px;
+	height: 100px;
+	margin: 15px auto;
+	background: url("../img/index/foot.png") -795px -9px no-repeat;
+}  
+.db_foot{
+	text-align: center;
+	line-height: 2em;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 40px;
+} 
+.db_foot i{
+	padding: 0 5px;
+}
+.db_foot div a{
+	display: inline-block;
+	width: 68px;
+	height: 25px;
+	margin-right: 16px;
+	margin-top: 20px;
+	background: url("../img/index/foot.png") 0 -60px no-repeat;
+}
